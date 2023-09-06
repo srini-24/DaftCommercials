@@ -14,8 +14,8 @@ public class DaftCommercial {
 	public static void main(String[] args) throws InterruptedException{
 		//public boolean status=false; 
 		String url="https://www.daft.ie/";
-		String email="rswati605@gmail.com";
-		String password="Vinayak@123";
+		String email="rswat@gmail.com";
+		String password="Vi@123";
 		By acceptall_loc=By.xpath("//button[contains(text(),'Acc')]");
 		By share_loc=By.xpath("//li[contains(text(),'Share')]");
 		By enter_loc=By.xpath("//input[contains(@aria-labelledby,'search')]");
@@ -94,10 +94,10 @@ public class DaftCommercial {
 	
 	public static boolean list(WebDriver driver,int list){
 		try{
-//			String email="vinayakpisal7@gmail.com";
-			String phone="+353892554821";
-			String email="info.failtefuturehomes@gmail.com";
-//			String phone="+353830875463";
+//			String email="vin7@gmail.com";
+			String phone="+35389333331";
+			String email="info.mes@gmail.com";
+//			String phone="+353833333463";
 			By list_loc=By.xpath("//ul[contains(@data-testid,'re')]//li["+list+"]");
 			By email_loc=By.xpath("//button[contains(@aria-label,'Email')]");
 			By send_btn=By.xpath("//button[contains(@aria-label,'Send')]");
@@ -117,7 +117,7 @@ public class DaftCommercial {
 			WebElement a1 = driver.findElement(fullname);
 			a1.sendKeys(Keys.CONTROL, "a");
 			a1.sendKeys(Keys.DELETE);
-			driver.findElement(fullname).sendKeys("Vinayak");
+			driver.findElement(fullname).sendKeys("xyz");
 			Thread.sleep(1000);
 			WebElement a2 = driver.findElement(youremail_loc);
 			a2.sendKeys(Keys.CONTROL, "a");
@@ -133,8 +133,8 @@ public class DaftCommercial {
 			a4.sendKeys(Keys.CONTROL, "a");
 			a4.sendKeys(Keys.DELETE);
 			driver.findElement(msg_loc).clear();
-			driver.findElement(msg_loc).sendKeys("Hello ," + '\n' + " Me ad my fiancé are looking for a permanent accommodation." + '\n' + " We came across your advertisement and we are very much interested in renting it." + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references." + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers. " + '\n' + " We don’t have pets with us. We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well. " + '\n' + " Thank you," + '\n' + " Vinayak");
-//			driver.findElement(msg_loc).sendKeys("Hello , Me and my fiancé are looking for a permanent accommodation. " + '\n' + " We came across your advertisement and we are very much interested in renting it. " + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references. " + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers." + '\n' + " We don’t have pets with us. " + '\n' + " We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well.  " + '\n' + " Thank you," + '\n' + " Swati");
+			driver.findElement(msg_loc).sendKeys("Hello ," + '\n' + " Me ad my fiancé are looking for a permanent accommodation." + '\n' + " We came across your advertisement and we are very much interested in renting it." + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references." + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers. " + '\n' + " We don’t have pets with us. We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well. " + '\n' + " Thank you," + '\n' + " xyz");
+//			driver.findElement(msg_loc).sendKeys("Hello , Me and my fiancé are looking for a permanent accommodation. " + '\n' + " We came across your advertisement and we are very much interested in renting it. " + '\n' + " We both are full time working professionals earning more than 70000+ euros yearly and can provide pay slips and references. " + '\n' + " We are clean, peaceful, vegetarian, non party and non smokers." + '\n' + " We don’t have pets with us. " + '\n' + " We maintain the cleanliness standard of the house. " + '\n' + " I would like to know if there is any possibility that we can have a viewing. " + '\n' + " We can move in immediately as well.  " + '\n' + " Thank you," + '\n' + " xyz");
 			Thread.sleep(3000);
 			driver.findElement(send_btn).click();
 			Thread.sleep(3000);
